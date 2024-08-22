@@ -87,7 +87,7 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_like" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/ibComment"
             android:background="@null"
             android:scaleType="centerInside"
@@ -96,7 +96,7 @@
             android:layout_weight="1"
             app:srcCompat="@drawable/ic_comment" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/ibShare"
             android:background="@null"
             android:scaleType="centerInside"
