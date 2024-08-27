@@ -1,4 +1,4 @@
-package com.example.instagramclone
+package com.example.instagramclone.utils
 
 import android.content.Context
 import android.widget.Toast

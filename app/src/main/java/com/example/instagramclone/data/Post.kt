@@ -1,4 +1,4 @@
-package com.example.instagramclone
+package com.example.instagramclone.data
 
 /**
  * Data class to store app posts
