@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.instagramclone.data.Post
 import com.example.instagramclone.R
+import com.example.instagramclone.rv_activity.RecyclerViewActivity
 import com.example.instagramclone.utils.showToast
 
 class MainActivity : AppCompatActivity() {
@@ -70,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     private fun initViews() {
         llPosts = findViewById(R.id.ll_posts)
         findViewById<Button>(R.id.btn_rv).setOnClickListener {
-            //startActivity(Intent(this, RecyclerViewActivity::class.java))
+            startActivity(Intent(this, RecyclerViewActivity::class.java))
         }
     }
 }
