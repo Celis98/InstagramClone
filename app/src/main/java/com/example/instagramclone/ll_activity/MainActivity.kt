@@ -54,7 +54,9 @@ class MainActivity : AppCompatActivity() {
 
             val ibLike = postView.findViewById<ImageButton>(R.id.ibLike)
             ibLike.setOnClickListener {
-                showToast("ibLike ${post.userName}")
+                showToast(
+                    text = "ibLike: ${post.userName}"
+                )
             }
 
             /**

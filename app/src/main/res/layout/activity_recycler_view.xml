@@ -7,6 +7,22 @@
     android:layout_height="match_parent"
     tools:context=".rv_activity.RecyclerViewActivity">
 
+    <Button
+        android:id="@+id/btnFillPostList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obtener posts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnRemovePost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar post"
+        app:layout_constraintStart_toEndOf="@+id/btnFillPostList"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_posts"
         android:layout_width="0dp"
@@ -14,6 +30,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFillPostList" />
+
+    <Button
+        android:id="@+id/btnModifyPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modificar Post"
+        app:layout_constraintStart_toEndOf="@+id/btnRemovePost"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
